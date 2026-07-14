@@ -1,9 +1,10 @@
 public Id insertCourse(String name, String details, Integer credits) {
     // code here
+    Set<Integer> validCred = new Set<Integer>{1, 2, 3, 4};
     apxio__Course__c c = new apxio__Course__c(
         Name = name,
         apxio__Course_Details__c = details,
-        apxio__Credits__c = String.valueOf(credits) // Converting integer to string for picklist
+        apxio__Credits__c = if (validCred.contains(credits) ?? String.valueOf(credits) : null // Converting integer to string for picklist
     );
     insert c;
     return c.id;
