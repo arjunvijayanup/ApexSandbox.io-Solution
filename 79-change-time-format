@@ -7,7 +7,7 @@ public String changeTimeFormat(String strTime) {
     Time t = Time.newInstance(hours, mins, 0, 0);
     DateTime dt = DateTime.newInstance(Date.today(), t);
 
-    return dt.format('h:mm a');
+    return dt.format('hh:mm a');
 
 
 }
