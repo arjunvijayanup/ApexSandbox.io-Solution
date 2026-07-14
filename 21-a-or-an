@@ -5,7 +5,7 @@ public String aOrAn(String word) {
                     lower.startsWith('e') ||
                     lower.startsWith('i') || 
                     lower.startsWith('o') || 
-                    lower.startsWith('u')
-    return (check ? "a" : "an") + " " + word
+                    lower.startsWith('u');
+    return (check ? "a" : "an") + " " + word;
 
 }
