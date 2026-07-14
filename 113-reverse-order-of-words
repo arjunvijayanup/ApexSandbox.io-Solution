@@ -3,11 +3,11 @@ public String reverseWordsInASentence(String sentence){
     List<String> arr = sentence.split('\\s+');
     List<String> reverse = [];
 
-    for (Integer i = 0; i < arr.length / 2; i++){
+    for (Integer i = 0; i < arr.size() / 2; i++){
 
         String temp = arr[i];
-        arr[i] = arr[length - 1 - i];
-        arr[length - 1 - i] = temp;
+        arr[i] = arr[arr.size() - 1 - i];
+        arr[arr.size() - 1 - i] = temp;
     }
 
     return String.join(' ', arr);
