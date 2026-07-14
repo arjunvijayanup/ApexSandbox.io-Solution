@@ -1,5 +1,7 @@
 public Id insertStudent(String name, String email) {
     // code here
-    apxio__Student__c s = new apxio__Student__c(Name = 'Arjun', apxio__Email__c = 'arjun.vijayanup@gmail.com');
+    apxio__Student__c s = new apxio__Student__c(Name = name, apxio__Email__c = email);
     insert s;
+
+
 }
