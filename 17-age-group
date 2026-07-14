@@ -1,6 +1,6 @@
 public String ageGroup(Integer n) {
     //code here
-    if (n > 22) {
+    if (n >= 22) {
         return 'Adult';
     }
     else if (n >= 15 && n <= 21){
