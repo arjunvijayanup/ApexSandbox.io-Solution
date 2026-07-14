@@ -10,6 +10,6 @@ public String reverseWordsInASentence(String sentence){
         arr[arr.size() - 1 - i] = temp;
     }
 
-    return String.join(' ', arr);
+    return String.join(arr, ' ');
     
 }
