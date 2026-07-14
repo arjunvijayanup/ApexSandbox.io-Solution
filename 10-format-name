@@ -1,4 +1,9 @@
 public String formatName(String firstName, String lastName) {
     //code here
-    return lastName + ', ' + firstName;
+    if (firstName && lastName) {
+        return lastName + ', ' + firstName;
+    }
+    else if (firstName) return firsName;
+    else if (lastName) return lastName;
+    else ''
 }
