@@ -7,5 +7,5 @@ public Integer nextPrime(Integer num) {
         }
     prime = i;
     }
-    return i;
+    return prime;
 }
