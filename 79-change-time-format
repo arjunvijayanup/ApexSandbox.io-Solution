@@ -1,8 +1,8 @@
 public String changeTimeFormat(String strTime) {
     //code here
     List<String> splits = strTime.split(':');
-    String hours = Integer.valueOf(splits[0]);
-    String mins = Integer.valueOf(splits[1]);
+    Integer hours = Integer.valueOf(splits[0]);
+    Integer mins = Integer.valueOf(splits[1]);
 
     Time t = Time.newInstance(hours, mins, 0, 0);
     DateTime dt = DateTime.newInstance(Date.today(), t);
