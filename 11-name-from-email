@@ -1,0 +1,7 @@
+public String nameFromEmail(String email) {
+    //code here
+    String arr = email.split('.@');
+    arr[0] = Character.toTitleCase(arr[0].charAt(0));
+    arr[1] = Character.toTitleCase(arr[1].charAt(0));
+    return arr[0] + ' ' + arr[1];
+}
