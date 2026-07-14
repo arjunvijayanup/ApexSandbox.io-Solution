@@ -1,0 +1,13 @@
+public String changeTimeFormat(String strTime) {
+    //code here
+    List<String> time = strTime.split(':');
+    String hours = Integer.valueOf(time[0]);
+    String mins = Integer.valueOf(time[1]);
+
+    Time t = Time.newInstance(hours, mins, 0, 0);
+    DateTime dt = DateTime.newInstance(Date.today(), t);
+
+    return dt.format('h:mm a');
+
+
+}
