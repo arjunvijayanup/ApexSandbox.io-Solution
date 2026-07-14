@@ -1,11 +1,11 @@
 public String aOrAn(String word) {
     //code here
-    v = ["a", "e", "i", "o", "u"]
-    if (startsWith(word) in v){
-        return "an" + " " + word
-    } 
-    else {
-        return "a" + " " + word
-    }
+    String lower = word.toLowerCase();
+    Boolean check = lower.startsWith('a') || 
+                    lower.startsWith('e') ||
+                    lower.startsWith('i') || 
+                    lower.startsWith('o') || 
+                    lower.startsWith('u')
+    return (check ? "a" : "an") + " " + word
 
 }
