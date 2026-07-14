@@ -1,5 +1,8 @@
 public String reverseWordsInASentence(String sentence){
     //your flawless code here
+
+    if (sentence == null) return null;
+    
     List<String> arr = sentence.split('\\s+');
 
     for (Integer i = 0; i < arr.size() / 2; i++){
