@@ -1,0 +1,11 @@
+public String aOrAn(String word) {
+    //code here
+    v = ["a", "e", "i", "o", "u"]
+    if (startsWith(word) in v){
+        return "an" + " " + word
+    } 
+    else {
+        return "a" + " " + word
+    }
+
+}
