@@ -4,7 +4,7 @@ public Boolean isPrime(Integer num) {
         return False;
     }
     else {
-        for (int i = 2; i < n; i++) {
+        for (int i = 2; i < num; i++) {
 
             if (Math.mod(num, i) == 0) return False;
 
