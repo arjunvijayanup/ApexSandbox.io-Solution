@@ -1,6 +1,6 @@
 public Integer nextPrime(Integer num) {
     //code here
-    Integer prime = num + 1;
+    Integer prime = Math.max(num + 1, 2);
     while (True){
         Boolean isPrime = True;
         for (Integer i = 2; i < prime; i++){
