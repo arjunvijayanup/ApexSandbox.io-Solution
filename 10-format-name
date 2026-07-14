@@ -5,5 +5,5 @@ public String formatName(String firstName, String lastName) {
     }
     else if (firstName) return firsName;
     else if (lastName) return lastName;
-    else ''
+    else '';
 }
