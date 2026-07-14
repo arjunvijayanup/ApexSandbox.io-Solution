@@ -6,6 +6,8 @@ public String registerStudent(String name, String phone, String email) {
         apxio__Email__c = email
     );
 
+    insert s;
+
     apxio__Student__c s1 = [SELECT apxio__Registration_Number__c
                             FROM apxio__Student__c
                             WHERE ID = s.id LIMIT 1];
