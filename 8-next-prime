@@ -12,5 +12,5 @@ public Integer nextPrime(Integer num) {
         if (isPrime) return prime;
         prime++;
     }
-    return -1;
+    //
 }
