@@ -1,7 +1,7 @@
 public List<Account> getAccounts(List<Account> accounts) {
     // code here
     if (accounts == null) return null;
-    if (accounts.isEmpty()) return accounts;
+    // if (accounts.isEmpty()) return accounts;
 
     List<AccountWrapper> wrappers = new List<AccountWrapper>();
     for (Account a: accounts){              //wrap
