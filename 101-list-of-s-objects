@@ -1,7 +1,8 @@
 public List<sObject> getListOfsObject(List<Account> accounts, List<Contact> contacts)
 {
     // code here
-    if (accounts.isEmpty() || contacts.isEmpty()) return null;
+    if (accounts.isEmpty()) return accounts;
+    if (contacts.isEmpty()) return contacts;
 
     List<sObject> items = new List<sObject>();
 
