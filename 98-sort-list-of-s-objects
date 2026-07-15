@@ -2,10 +2,10 @@ public List<Account> getAccounts(List<Account> accounts) {
     // code here
     List<AccountWrapper> wrappers = new List<AccountWrapper>();
     for (Account a: accounts){              //wrap
-        wrappers.add(new AccountWrapper(a);)
+        wrappers.add(new AccountWrapper(a));
     }
 
-    wrappers.sort()                 //sort
+    wrappers.sort();                 //sort
 
     List<Account> sorted = new List<Account>();
     for (AccountWrapper w: wrappers){
@@ -26,7 +26,7 @@ public class AccountWrapper implements Comparable {
         AccountWrapper compareToAcc = (AccountWrapper) obj;
         if (acc.AnnualRevenue == compareToAcc.acc.AnnualRevenue) return 0;
         if (acc.AnnualRevenue < compareToAcc.acc.AnnualRevenue) return 1;
-        return -1
+        return -1;
     }
 
 }
