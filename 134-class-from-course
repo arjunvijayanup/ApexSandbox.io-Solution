@@ -2,11 +2,11 @@ public Id classFromCourse(String courseName) {
     // code here
     List<apxio__Course__c> courses = [SELECT Id, Name
                                       FROM apxio__Course__c
-                                      WHERE Name == courseName
+                                      WHERE Name = :courseName
                                       LIMIT 1];
 
     apxio__Class__c c = new apxio__Class__c(
-        apxio__Course__c = :courses == null ? null : courses.id
+        apxio__Course__c = courses.isEmpty() ? null : courses[0].id
     );
 
     insert c;
