@@ -19,6 +19,6 @@ public void enrollStudents(List<String> emails, String className) {
         ));
     }
 
-    insert enrollements
+    insert enrollments;
 
 }
