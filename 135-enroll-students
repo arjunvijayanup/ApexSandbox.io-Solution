@@ -2,10 +2,10 @@ public void enrollStudents(List<String> emails, String className) {
     // code here
     List<apxio__Student__c> students = [SELECT Id, Name 
                                         FROM apxio__Student__c
-                                        WHERE apxio__Email__c IN emails];
+                                        WHERE apxio__Email__c IN :emails];
     List<apxio__Class__c> classes = [SELECT Id, Name 
                                      FROM apxio__Class__c
-                                     WHERE Name = className
+                                     WHERE Name = :className
                                      LIMIT 1];
     
     if (students.isEmpty() || classes.isEmpty()) return;
