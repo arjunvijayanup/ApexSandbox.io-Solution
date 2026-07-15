@@ -7,6 +7,6 @@ public String divide(Integer a, Integer b){
         return 'Divide by 0';
     }
     catch (NullPointerException e){
-        return 'Divide by 0';
+        return 'Attempt to de-reference a null object';
     }
 }
