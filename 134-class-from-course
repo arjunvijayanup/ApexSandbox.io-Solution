@@ -6,7 +6,7 @@ public Id classFromCourse(String courseName) {
                                       LIMIT 1];
 
     
-    if !courses.isEmpty() {
+    if (!courses.isEmpty()) {
 
         apxio__Class__c c = new apxio__Class__c(
         Name = courseName,
