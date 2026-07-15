@@ -5,13 +5,19 @@ public Id classFromCourse(String courseName) {
                                       WHERE Name = :courseName
                                       LIMIT 1];
 
-    apxio__Class__c c = new apxio__Class__c(
+    
+    if !courses.isEmpty() {
+
+        apxio__Class__c c = new apxio__Class__c(
         Name = courseName,
-        apxio__Course__c = courses.isEmpty() ? null : courses[0].id
+        apxio__Course__c = courses[0].id
     );
 
     insert c;
     return c.id;
 
+    }
+
+    return;
     
 }
