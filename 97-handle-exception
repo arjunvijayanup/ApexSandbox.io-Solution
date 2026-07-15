@@ -6,4 +6,7 @@ public String divide(Integer a, Integer b){
     catch (MathException e){
         return 'Divide by 0';
     }
+    catch (NullPointerException e){
+        return 'Divide by 0';
+    }
 }
