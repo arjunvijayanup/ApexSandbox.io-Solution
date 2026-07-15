@@ -1,15 +1,15 @@
 public List<sObject> getListOfsObject(List<Account> accounts, List<Contact> contacts)
 {
     // code here
-    if (account.isEmpty() || contacts.isEmpty()) return null;
+    if (accounts.isEmpty() || contacts.isEmpty()) return null;
 
-    List<String> items = new List<String>();
+    List<sObject> items = new List<sObject>();
 
     for (Account a : accounts){
-        items.add(a)
+        items.add(a);
     }
     for (Contact c : contacts){
-        items.add(c)
+        items.add(c);
     }
     return items;
 }
