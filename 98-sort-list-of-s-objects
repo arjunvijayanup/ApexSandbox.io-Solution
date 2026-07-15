@@ -1,7 +1,6 @@
 public List<Account> getAccounts(List<Account> accounts) {
     // code here
     if (accounts == null) return null;
-    // if (accounts.isEmpty()) return accounts;
 
     List<AccountWrapper> wrappers = new List<AccountWrapper>();
     for (Account a: accounts){              //wrap
@@ -10,7 +9,7 @@ public List<Account> getAccounts(List<Account> accounts) {
 
     wrappers.sort();                 //sort
 
-    List<Account> sorted = new List<Account>();
+    List<Account> sorted = new List<Account>();     //unwrap
     for (AccountWrapper w: wrappers){
         sorted.add(w.acc);
     }
