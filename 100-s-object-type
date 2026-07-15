@@ -1,7 +1,7 @@
 public Boolean isTypeAccount(sObject record)
 {
     // code here
-    if (record.getSObjectType() == Account.SObjectType){
+    if (record instanceof Account){
         return True;
     }
     return False;
