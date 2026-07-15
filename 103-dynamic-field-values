@@ -1,6 +1,7 @@
 public List<String> getFieldsValue(Account acc, List<String> fields)
 {
     // code here
+    if (acc == null) return null;
     List<String> res = new List<String>();
     for (String field : fields){
         res.add((String) acc.get(field));
